@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale.e">
+  <title>portfolio website</title>
+  <!--Funt-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!--File CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+        <a href="#" class="logo"><span> اكذب </span> واحد</a>
+        <ul class="links">
+            <li class="active"><a href="#">المعلومات الشخصية</a></li>
+            <li><a href="#">المؤهل العلمي</a></li>
+            <li><a href="#">المهارات<a></li>
+            <li><a href="#">الخبرات</a></li> 
+        </ul>
+
+        <div class="social-links">
+            <a href="https://iwtsp.com/966536958264"><i class="fa-brands fa-square-whatsapp" style="color: #96d35f;"></i></a>
+            <a href="https://t.snapchat.com/a6xjznKg"><i class="fa-brands fa-square-snapchat" style="color: #fffc41;"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube" style="color: #ff2600;"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram" style="color: #00a3d7;"></i></a>
+      </div>
+
+      <i id="btnMenu" class="fa-solid fa-bars"></i>
+    </nav>
+  </header>
+
+  <div class="qa-sec">
+    <div class="contanier">
+        <div class="dev-text">
+            <h1>مسيلمة الكذاب</h1>
+            <span>افضل نصاب</span>
+            <p>odi deserunt perferendis dignissimos dolorem possimus reiciendis ab necessitatibus illum autem voluptatum. Quaerat sit dolor ad veniam, officiis ex esse</p>
+            <a href="#" class="btn">كذبان</a>
+        </div>
+        
+        <div class="div-img">
+            <img src="images/qa.png" alt="#">
+        </div>
+    </div>
+  </div>
+
+  <script>
+    let btnMenu = document.getElementById("btnMenu");
+    let NavLIinks = document.querySelector(".links");
+
+    btnMenu.onclick = function (){
+      btnMenu.classList.toggle("fa-times")
+      NavLIinks.classList.toggle("active")
+    }
+  </script>
+
+<html>
+<body>

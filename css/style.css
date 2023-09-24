@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #afafaf93;
+    z-index: 100;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    height: 80px;
+}
+header nav .logo{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+}
+header nav .logo span{
+     color: #04ff00;
+}
+header nav .links{
+    display: flex;
+}
+header nav .links li{
+    position: relative;
+    margin: 0 25px;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+}
+header nav .links li::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #00ff15;
+    transition: 0.3s;
+}
+header nav .links li:hover::after,
+header nav .links li.active::after{
+    width: 100%;
+}
+header nav .links li a{
+    color: #fff;
+    font-size: 17px;
+}
+header nav .social-links a i{
+    color: #08d655;
+    font-size: 24px;
+    margin-left: 15px;
+}
+.qa-sec{
+    height: 100vh;
+    background: url(../images/bg.jpeg);
+    background-size: cover;
+    background-position: top;
+}
+.qa-sec .contanier{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+.qa-sec .contanier .dev-text{
+    width: 50%;
+}
+.qa-sec .contanier .dev-text h1{
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+.qa-sec .contanier .dev-text span{
+    font-size: 40px;
+    color: #08d655;
+}
+.qa-sec .contanier .dev-text p{
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0 50px;
+    line-height: 1.7;
+}
+.qa-sec .contanier .dev-text .btn{
+    color: #fff;
+    border: 1px solid #08d655;
+    background-color: #08d655;
+    padding: 14px 40px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.qa-sec .contanier .dev-text .btn:hover{
+    background: transparent;
+}
+.qa-sec .contanier .div-img{
+    width: 35%;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+}
+.qa-sec .contanier .div-img img{
+    width: 100%;
+}
+#btnMenu{
+    display: none;
+}
+
+/* Resoponsive */
+@media(max-width : 980px){
+    header nav .links{
+        position: absolute;
+        top: 100%;
+        right: -420;
+        flex-direction: column;
+        background-color: 000;
+        border-left: 1px solid #444444a8;
+        width: 400px;
+        height: 100vh;
+        text-align: center;
+        padding: 20px 0;
+        transition: 0.3s;
+    }
+    header nav .links.active{
+        right: 0;
+    }
+    .social-links{
+        display: none;
+    }
+    #btnMenu{
+        display: block;
+        color: #fff;
+        font-size: 30px;
+    }
+    .qa-sec{
+        height: auto;
+    }
+    .qa-sec .contanier{
+        flex-direction: column;
+    }
+    .qa-sec .contanier .dev-text{
+        width: 80%;
+        margin-top: 15px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .qa-sec .contanier .div-img{
+        position: relative;
+        width: 50%;
+    }
+    .qa-sec .contanier .dev-text h1{
+        font-size: 50%;
+    }
+    .qa-sec .contanier .dev-text span{
+        font-size: 30px;
+    }
+}
+@media(max-width;450px){
+    .qa-sec .contanier .dev-text h1{
+        font-size: 35%;
+    }
+    .qa-sec .contanier .dev-text span{
+        font-size: 25px;
+    }
+    .qa-sec .contanier .dev-text p{
+        font-size: 16px;
+    }
+    .qa-sec .contanier .div-img{
+        width: 100%;
+    }
+}
