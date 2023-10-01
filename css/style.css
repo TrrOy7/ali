@@ -79,6 +79,8 @@ header nav .social-links a i{
 }
 .qa-sec .contanier .dev-text{
     width: 50%;
+    font-size: 70px;
+    margin-bottom: 10px;
 }
 .qa-sec .contanier .dev-text h1{
     color: #fff;
