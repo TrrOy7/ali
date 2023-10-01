@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    text-decoration: none;
 }
 header{
     position: fixed;
@@ -67,6 +66,7 @@ header nav .social-links a i{
     background: url(../images/bg.jpeg);
     background-size: cover;
     background-position: top;
+    overflow: hidden;
 }
 .qa-sec .contanier{
     width: 85%;
@@ -144,7 +144,7 @@ header nav .social-links a i{
     }
     #btnMenu{
         display: block;
-        color: #fff;
+        color: #ffffff;
         font-size: 30px;
     }
     .qa-sec{
@@ -155,22 +155,22 @@ header nav .social-links a i{
     }
     .qa-sec .contanier .dev-text{
         width: 80%;
-        margin-top: 15px;
+        margin-top: 150px;
         margin-bottom: 60px;
         text-align: center;
     }
-    .qa-sec .contanier .div-img{
-        position: relative;
-        width: 50%;
-    }
     .qa-sec .contanier .dev-text h1{
-        font-size: 50%;
+        font-size: 50px;
     }
     .qa-sec .contanier .dev-text span{
         font-size: 30px;
     }
+    .qa-sec .contanier .div-img{
+        position: relative;
+        width: 35%;
+    }
 }
-@media(max-width;450px){
+@media(max-width: 450px){
     .qa-sec .contanier .dev-text h1{
         font-size: 35%;
     }
@@ -184,3 +184,4 @@ header nav .social-links a i{
         width: 100%;
     }
 }
+
