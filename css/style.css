@@ -7,10 +7,12 @@
   }
   header{
     position: fixed;
+    background-color: #000;
     top: 0;
     left: 0;
     right: 0;
     border-bottom: 1px solid #fafafa93;
+    z-index: 100;
   }
   header nav{
     display: flex;
@@ -124,64 +126,67 @@
 }
 /* Resoponsive */
 @media(max-width : 980px){
-    header nav .links{
-        position: absolute;
-        top: 100%;
-        right: -420;
-        flex-direction: column;
-        background-color: 000;
-        border-left: 1px solid #444444a8;
-        width: 400px;
-        height: 100vh;
-        text-align: center;
-        padding: 20px 0;
-        transition: 0.3s;
-    }
-    header nav .links.active{
-        right: 0;
-    }
-    .social-links{
-        display: none;
-    }
-    #btnMenu{
-        display: block;
-        color: #ffffff;
-        font-size: 30px;
-    }
-    .qa-sec{
-        height: auto;
-    }
-    .qa-sec .contanier{
-        flex-direction: column;
-    }
-    .qa-sec .contanier .dev-text{
-        width: 80%;
-        margin-top: 150px;
-        margin-bottom: 60px;
-        text-align: center;
-    }
-    .qa-sec .contanier .dev-text h1{
-        font-size: 50px;
-    }
-    .qa-sec .contanier .dev-text span{
-        font-size: 30px;
-    }
-    .qa-sec .contanier .div-img{
-        position: relative;
-        width: 75%;
-    }
+header nav .links{
+      position: absolute;
+      top: 100%;
+      right: -420px;
+      flex-direction: column;
+      background-color: #000;
+      border-left: 1px solid #444444a8;
+      width: 400px;
+      height: 100vh;
+      text-align: center;
+      padding: 20px 0;
+      transition: 0.3s;
 }
-@media(max-width: 370px){
+.social-links{
+  display: none;
+}
+header nav .links.active{
+    right: 0;
+}
+#btnMenu{
+  display: block;
+  color: #ffffff;
+  font-size: 30px;
+}
+.qa-sec{
+  height: auto;
+}
+.qa-sec .contanier{
+  flex-direction: column;
+}
+.qa-sec .contanier .dev-text{
+  width: 80%;
+  margin-top: 150px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.qa-sec .contanier .div-img{
+  position: relative;
+  width: 50%;
+}
+.qa-sec .contanier .dev-text h1{
+font-size: 50px;
+}
+.qa-sec .contanier .dev-text span{
+    font-size: 30px;
+}
+.qa-sec .contanier .dev-text p{
+    font-size: 30px;
+}
+}
+@media(max-width: 450px){
     .qa-sec .contanier .dev-text h1{
-        font-size: 100%;
-    }
-    .qa-sec .contanier .dev-text span{
-        font-size: 100%;
-    }
-    .qa-sec .contanier .dev-text p{
-        font-size: 100%;
-    }
-    .qa-sec .contanier .div-img{
-        width: 100%;
-    }
+    font-size: 35px;
+}
+.qa-sec .contanier .dev-text span{
+    font-size: 25px;
+}
+.qa-sec .contanier .dev-text p{
+    font-size: 16px;
+}
+.qa-sec .contanier .div-img{
+  width: 100%;
+}
 }
