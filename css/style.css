@@ -95,8 +95,8 @@
     font-size: 40px;
     color: #64c864;
 }
-.dev-text p{
-    color: #fafafa;
+.dev-text pre{
+    color: #00eaff;
     font-size: 40px;
     margin: 10px 0 50px;
     line-height: 1.7;
@@ -172,7 +172,7 @@ font-size: 50px;
 .dev-text span{
     font-size: 30px;
 }
-.dev-text p{
+.dev-text pre{
     font-size: 30px;
 }
 }
@@ -183,7 +183,7 @@ font-size: 50px;
     .dev-text span{
     font-size: 25px;
     }
-    .dev-text p{
+    .dev-text pre{
     font-size: 16px;
     }
     .div-img{
