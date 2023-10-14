@@ -22,25 +22,25 @@
     margin: auto;
     height: 80px;
   }
-  header NAV .logo{
+.logo{
     color: #fff;
     font-size: 30px;
     font-weight: bolder;
   }
-  header nav .LOGO span{
+.LOGO span{
     color: #64c864;
   }
-  header nav .links{
+.links{
     display: flex;
   }
-  header nav .links li{
+.links li{
     position: relative;
     margin: 0 25px;
     height: 80px;
     line-height: 80px;
     list-style: none;
   }
-  header nav .links li::after{
+.links li::after{
     position: absolute;
     content: '';
     bottom: 0;
@@ -50,21 +50,21 @@
     background: #64c864;
     transition: 0.3s;
   }
-  header nav .links li:hover::after,
-  header nav .links li.active::after{
+.links li:hover::after,
+.links li.active::after{
     width: 100%;
   }
 
-  header nav .links li a{
+.links li a{
     color: #c8c6c6;
     font-size: 17px;
   }
-  header nav .social-links a i{
+.social-links a i{
     color: #64c864;
     font-size: 24px;
     margin-left: 15px;
   }
-  header nav .social-links a i:hover{
+.social-links a i:hover{
     color: #fafafa;
 }
 .qa-sec{
@@ -74,7 +74,7 @@
     background-position: top;
     overflow: auto;
 }
-.qa-sec .contanier{
+.contanier{
     width: 85%;
     margin: auto;
     display: flex;
@@ -82,11 +82,11 @@
     align-items: center;
     height: 100%;
 }
-.qa-sec .contanier .dev-text{
+.dev-text{
     width: 50%;
     font-size: 20px;
 }
-.qa-sec .contanier .dev-text h1{
+.dev-text h1{
     color: #fafafa;
     font-size: 70px;
     margin-bottom: 10px;
@@ -95,13 +95,13 @@
     font-size: 40px;
     color: #64c864;
 }
-.qa-sec .contanier .dev-text p{
+.dev-text p{
     color: #fafafa;
     font-size: 40px;
     margin: 10px 0 50px;
     line-height: 1.7;
 }
-.qa-sec .contanier .dev-text .btn{
+.btn{
     color: #ffffff;
     border: 1px solid #64c864;
     background-color: #64c864;
@@ -109,16 +109,16 @@
     border-radius: 5px;
     transition: 0.3s;
 }
-.qa-sec .contanier .dev-text .btn:hover{
+.btn:hover{
   background: transparent;
 }
-.qa-sec .contanier .div-img{
+.div-img{
   width: 35%;
   position: absolute;
   bottom: -10px;
   right: 0;
 }
-.qa-sec .contanier .div-img img{
+.div-img img{
   width: 100%;
 }
 #btnMenu{
@@ -126,7 +126,7 @@
 }
 /* Resoponsive */
 @media(max-width : 980px){
-header nav .links{
+.links{
       position: absolute;
       top: 100%;
       right: -420px;
@@ -142,7 +142,7 @@ header nav .links{
 .social-links{
   display: none;
 }
-header nav .links.active{
+.links.active{
     right: 0;
 }
 #btnMenu{
@@ -153,40 +153,40 @@ header nav .links.active{
 .qa-sec{
   height: auto;
 }
-.qa-sec .contanier{
+.contanier{
   flex-direction: column;
 }
-.qa-sec .contanier .dev-text{
+.dev-text{
   width: 80%;
   margin-top: 150px;
   margin-bottom: 60px;
   text-align: center;
 }
-.qa-sec .contanier .div-img{
+.div-img{
   position: relative;
   width: 50%;
 }
-.qa-sec .contanier .dev-text h1{
+.dev-text h1{
 font-size: 50px;
 }
-.qa-sec .contanier .dev-text span{
+.dev-text span{
     font-size: 30px;
 }
-.qa-sec .contanier .dev-text p{
+.dev-text p{
     font-size: 30px;
 }
 }
 @media(max-width: 450px){
     .qa-sec .contanier .dev-text h1{
     font-size: 35px;
-}
-.qa-sec .contanier .dev-text span{
+    }
+    .dev-text span{
     font-size: 25px;
-}
-.qa-sec .contanier .dev-text p{
+    }
+    .dev-text p{
     font-size: 16px;
-}
-.qa-sec .contanier .div-img{
+    }
+    .div-img{
   width: 100%;
-}
+    }
 }
